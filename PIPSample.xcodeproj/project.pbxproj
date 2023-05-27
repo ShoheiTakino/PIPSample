@@ -16,6 +16,10 @@
 		5DAEB8172A2242CB0089E96F /* PIPSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB8162A2242CB0089E96F /* PIPSampleTests.swift */; };
 		5DAEB8212A2242CB0089E96F /* PIPSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB8202A2242CB0089E96F /* PIPSampleUITests.swift */; };
 		5DAEB8232A2242CB0089E96F /* PIPSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB8222A2242CB0089E96F /* PIPSampleUITestsLaunchTests.swift */; };
+		5DAEB8312A2243260089E96F /* PIPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB8302A2243260089E96F /* PIPViewController.swift */; };
+		5DAEB8332A2243430089E96F /* PIPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DAEB8322A2243430089E96F /* PIPViewController.xib */; };
+		5DAEB8362A2245CE0089E96F /* PIPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAEB8352A2245CE0089E96F /* PIPManager.swift */; };
+		5DAEB8392A2249640089E96F /* pip_demo_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5DAEB8382A2248EC0089E96F /* pip_demo_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5DAEB81C2A2242CB0089E96F /* PIPSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIPSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAEB8202A2242CB0089E96F /* PIPSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIPSampleUITests.swift; sourceTree = "<group>"; };
 		5DAEB8222A2242CB0089E96F /* PIPSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIPSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DAEB8302A2243260089E96F /* PIPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIPViewController.swift; sourceTree = "<group>"; };
+		5DAEB8322A2243430089E96F /* PIPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PIPViewController.xib; sourceTree = "<group>"; };
+		5DAEB8352A2245CE0089E96F /* PIPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIPManager.swift; sourceTree = "<group>"; };
+		5DAEB8382A2248EC0089E96F /* pip_demo_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = pip_demo_video.mp4; path = ../../../../pip_demo_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		5DAEB7FE2A2242C90089E96F /* PIPSample */ = {
 			isa = PBXGroup;
 			children = (
+				5DAEB8372A2248C10089E96F /* VideoAsset */,
+				5DAEB8342A2245BA0089E96F /* Manager */,
+				5DAEB82F2A2242F40089E96F /* PIPViewController */,
 				5DAEB7FF2A2242C90089E96F /* AppDelegate.swift */,
 				5DAEB8012A2242C90089E96F /* SceneDelegate.swift */,
 				5DAEB8032A2242C90089E96F /* ViewController.swift */,
@@ -125,6 +136,31 @@
 				5DAEB8222A2242CB0089E96F /* PIPSampleUITestsLaunchTests.swift */,
 			);
 			path = PIPSampleUITests;
+			sourceTree = "<group>";
+		};
+		5DAEB82F2A2242F40089E96F /* PIPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DAEB8302A2243260089E96F /* PIPViewController.swift */,
+				5DAEB8322A2243430089E96F /* PIPViewController.xib */,
+			);
+			path = PIPViewController;
+			sourceTree = "<group>";
+		};
+		5DAEB8342A2245BA0089E96F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5DAEB8352A2245CE0089E96F /* PIPManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5DAEB8372A2248C10089E96F /* VideoAsset */ = {
+			isa = PBXGroup;
+			children = (
+				5DAEB8382A2248EC0089E96F /* pip_demo_video.mp4 */,
+			);
+			path = VideoAsset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DAEB8392A2249640089E96F /* pip_demo_video.mp4 in Resources */,
 				5DAEB80C2A2242CB0089E96F /* LaunchScreen.storyboard in Resources */,
 				5DAEB8092A2242CB0089E96F /* Assets.xcassets in Resources */,
+				5DAEB8332A2243430089E96F /* PIPViewController.xib in Resources */,
 				5DAEB8072A2242C90089E96F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DAEB8042A2242C90089E96F /* ViewController.swift in Sources */,
+				5DAEB8362A2245CE0089E96F /* PIPManager.swift in Sources */,
 				5DAEB8002A2242C90089E96F /* AppDelegate.swift in Sources */,
+				5DAEB8312A2243260089E96F /* PIPViewController.swift in Sources */,
 				5DAEB8022A2242C90089E96F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
